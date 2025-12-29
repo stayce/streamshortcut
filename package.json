@@ -1,0 +1,31 @@
+{
+  "name": "streamshortcut",
+  "version": "1.0.0",
+  "description": "A lightweight Shortcut MCP for Claude Code",
+  "author": "Stayce Cavanaugh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stayce/streamshortcut.git"
+  },
+  "bin": {
+    "streamshortcut": "mcp/dist/index.js"
+  },
+  "scripts": {
+    "build": "cd mcp && npm install && npm run build",
+    "start": "node mcp/dist/index.js",
+    "prepare": "simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run build && git add mcp/dist/index.js"
+  },
+  "devDependencies": {
+    "simple-git-hooks": "^2.11.1"
+  },
+  "keywords": [
+    "shortcut",
+    "mcp",
+    "claude-code",
+    "model-context-protocol"
+  ]
+}
