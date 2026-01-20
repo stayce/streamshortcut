@@ -102,6 +102,10 @@ Use `{"action": "help"}` for full documentation.
 | @shortcut/mcp | ~11,652 | 52 | — |
 | StreamShortcut | ~393 | 1 | **96.6%** |
 
+## Related
+
+- [streamshortcut-cloudflare](https://github.com/stayce/streamshortcut-cloudflare) - Cloudflare Workers version with remote MCP support
+
 ## Credits
 
 Inspired by [MCPs Are Not Like Other APIs](https://blog.fsck.com/2025/10/19/mcps-are-not-like-other-apis/) and forked from [StreamLinear](https://github.com/obra/streamlinear).
